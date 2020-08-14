@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 
+require('ts-node/register');
+require('./server.ts');
+
 process.on("SIGINT", () => process.exit(1));
 process.on("SIGTERM", () => process.exit(1));
 
